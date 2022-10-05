@@ -137,11 +137,6 @@ body {
     margin-top: 10vh;
     align-items: center;
 }
-.world h6 span{
-    width: 100px;
-    height: 2px;
-    background-color: white;
-}
 #whisky{
     position: relative;
     width: 50%;
@@ -265,22 +260,48 @@ body {
 }
 
 #images {
-    padding: 0vw 2vw;
-    position: relative;
+    /* padding: 0vw 2vw; */
+    /* position: relative; */
     height: 90vh;
     width: 50vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3vw;
-    /* background-color: PINK; */
 }
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
 
 .img {
     position: relative;
-    width: 20vw;
+    width: 25%;
     height: 100%;
-    position: relative;
     /* background-color: red; */
 }
 
@@ -303,6 +324,7 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: white;
+    left: -10%;
     bottom: 10%;
     opacity: 0;
     border: 1px solid rgb(164, 160, 160);
@@ -480,7 +502,6 @@ body {
     text-transform: uppercase;
     font-size: .7vw;
 }
-
 
 
 

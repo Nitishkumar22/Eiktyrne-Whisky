@@ -124,6 +124,23 @@ gsap.from(".o1",{
       }
 
 })
+gsap.from("#top",{
+  scrollTrigger: {
+      trigger: "#page4",
+      scroller: "#main",
+      start: "top 20%",
+      end: "top 10%",
+    },
+  opacity:0,
+  y:150,
+  duration: 1,
+  stagger: {
+      from: "end",
+      amount: .5,
+      axis: "x"
+    }
+
+})
 gsap.from(".b1",{
     scrollTrigger: {
         trigger: "#page4",
@@ -141,6 +158,15 @@ gsap.from(".b1",{
       }
 
 })
+
+//swiperr js
+
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});  
 
 
 
